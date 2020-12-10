@@ -1199,11 +1199,11 @@ declare namespace browser.runtime {
       gecko?: FirefoxSpecificProperties;
     };
     experiment_apis?: any;
-    protocol_handlers?: {
+    protocol_handlers?: Array<{
       name: string;
       protocol: string;
       uriTemplate: string;
-    };
+    }>;
 
     // Opera specific
     minimum_opera_version?: string;
